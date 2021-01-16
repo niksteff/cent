@@ -1,7 +1,7 @@
 {
-    "name": "CENT",
+    "name": "New Pantone Tab",
     "version": "1.0",
-    "description": "Replaces the NewTab background color.",
+    "description": "Replaces the NewTab background color with a pantone colored surface.",
     "permissions": [
         "activeTab",
         "storage"

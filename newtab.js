@@ -1,5 +1,4 @@
-chrome.storage.sync.get('solidBgColor', function (result) {
-    console.log('Value currently is ', result.solidBgColor);
-
-    document.body.style.backgroundColor = result.solidBgColor;
+chrome.runtime.sendMessage({ data: "getCurrentColor" }, function (currentColor) {
+    console.log('currentColor', currentColor);
+    document.body.style.backgroundColor = currentColor.hex;
 });
