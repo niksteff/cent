@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>CENT</title>
+  <title>New Tab</title>
   <style>
     html, body {
       height: 100%;
@@ -19,6 +19,35 @@
 
     h1 {
       color: #ffffff;
+      margin: 0;
+    }
+
+    #pantoneLink > a{
+      position: absolute;
+      font-family: "Helvetica", "Roboto", "Arial", sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: underline;
+      color: #ffffff;
+      top: 1rem;
+      right: 15px;
+    }
+
+    .pantoneInfo {
+      position: absolute;      
+      font-family: sans-serif;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+
+    #pantoneName {
+      bottom: 3rem;
+      right: 15px;
+    }
+
+    #pantoneCode {
+      bottom: 0;
+      right: 15px;
     }
 
     .container {
@@ -32,6 +61,9 @@
 
 <body id="body" class="cPageBackground">
   <div id="container" class="container">
+    <h1 id="pantoneLink"><a href="https://www.pantone.com/">Pantone</a></h1>
+    <h1 id="pantoneName" class="pantoneInfo"></h1>
+    <h2 id="pantoneCode" class="pantoneInfo"></h2>
   </div>
   <script src="newtab.js"></script>
 </body>

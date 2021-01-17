@@ -26,12 +26,12 @@ function constructOptions() {
   // Set the random color
   let checkbox = document.createElement('INPUT');
   checkbox.setAttribute("type", "checkbox");
+  chrome.storage.sync.get('randomSetting', function (result) {
+    checkbox.checked = result.randomSetting;
+  });
+
   checkbox.addEventListener('click', function () {
-    chrome.storage.sync.set({ randomSetting: checkbox.checked }, function (result) {
-      chrome.storage.sync.get('randomSetting', function (result) {
-        console.log('randomSetting set to: ', result);
-      });
-    });
+    chrome.storage.sync.set({ randomSetting: checkbox.checked });
   });
 
   randomColor.appendChild(checkbox);
