@@ -1,7 +1,7 @@
 {
     "name": "Designcolors of the year - DOTY",
-    "version": "1.0",
-    "description": "This extension will replace the new tab site in your chrome browser to a flat surface colored with pantone colors of the year. It is best viewed in full screen browser mode. It will also display a link to the pantone website and information about the color displayed such as the name and the color code. It will not collect any data from you.",
+    "version": "0.0.0.1",
+    "description": "Will replace the newTab site with surfaces colored in design colors of the year.",
     "permissions": [
         "activeTab",
         "storage"
