@@ -93,7 +93,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
         chrome.storage.sync.get('randomSetting', function (setting) {
             if (setting.randomSetting == true) {
                 getRandomColor(pantoneYearColors.length, 0, function (newRandomColor) {
-                    console.debug('Send random color', newRandomColor);
                     sendResponse(newRandomColor);
                 });
 

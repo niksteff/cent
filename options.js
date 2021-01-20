@@ -12,11 +12,7 @@ function constructOptions() {
       button.textContent = item.code + " " + item.name;
 
       button.addEventListener('click', function () {
-        chrome.storage.sync.set({ userColorSetting: item }, function () {
-          chrome.storage.sync.get('userColorSetting', function (result) {
-            console.log('userColorSetting set to: ', result);
-          });
-        });
+        chrome.storage.sync.set({ userColorSetting: item });
       });
 
       colorButtons.appendChild(button);

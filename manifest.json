@@ -3,7 +3,6 @@
     "version": "0.0.0.1",
     "description": "Will replace the newTab site with surfaces colored in design colors of the year.",
     "permissions": [
-        "activeTab",
         "storage"
     ],
     "options_page": "options.html",
