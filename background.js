@@ -1,5 +1,11 @@
 const pantoneYearColors = [
     {
+        "hex": "#6667AB",
+        "code": "17-3938 TCX",
+        "name": "Very Peri",
+        "year": 2022
+    },
+    {
         "hex": "#F5DF4D",
         "code": "13-0647 TCX",
         "name": "Illuminating",
